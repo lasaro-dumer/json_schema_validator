@@ -40,19 +40,19 @@
 
         "allOf":{
           "type":"array",
-          "items":{"$ref":"#/definitions/JSch"}
+          "items":{"$ref":"#/definitions/JSDoc"}
         },
         "anyOf":{
           "type":"array",
-          "items":{"$ref":"#/definitions/JSch"}
+          "items":{"$ref":"#/definitions/JSDoc"}
         },
         "not":{
           "type":"array",
-          "items":{"$ref":"#/definitions/JSch"}
+          "items":{"$ref":"#/definitions/JSDoc"}
         },
         "oneOf":{
           "type":"array",
-          "items":{"$ref":"#/definitions/JSch"}
+          "items":{"$ref":"#/definitions/JSDoc"}
         },
         "enum":{
           "type":"array"
@@ -108,7 +108,7 @@
             }
           ]
         },
-        "additionalItems":{"anyOf":[{"type":"boolean"}, {"$ref":"#/definitions/schema"}]},
+        "additionalItems":{"anyOf":[{"type":"boolean"}, {"$ref":"#/definitions/JSDoc"}]},
         "minItems":{"type":"integer"},
         "maxItems":{"type":"integer"},
         "uniqueItems":{"type":"boolean"},
@@ -133,8 +133,7 @@
         "exclusiveMaximum": {
           "type": "boolean"
         }
-      },
-      "additionalProperties": false
+      }
     },
     "typename":{
       "enum": ["string", "integer", "number", "boolean", "null", "array", "object"]
