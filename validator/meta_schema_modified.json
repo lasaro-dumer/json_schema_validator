@@ -158,7 +158,8 @@
                 "exclusiveMaximum": {
                     "type": "boolean"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "typename": {
             "enum": ["string", "integer", "number", "boolean", "null", "array", "object"]
